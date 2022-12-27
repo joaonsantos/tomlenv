@@ -1,4 +1,9 @@
 # TOMLenv
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/joaonsantos/tomlenv/python-publish.yml)
+![PyPI - Version](https://img.shields.io/pypi/v/tomlenv)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tomlenv)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/tomlenv)
+![License](https://img.shields.io/github/license/joaonsantos/tomlenv)
 
 Environment wrapped TOML.
 
