@@ -5,7 +5,9 @@
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/tomlenv)
 ![License](https://img.shields.io/github/license/joaonsantos/tomlenv)
 
-Environment wrapped TOML.
+Environment wrapped TOML. 
+
+Package available in [PyPI](https://pypi.org/project/tomlenv/).
 
 ## Getting Started
 
