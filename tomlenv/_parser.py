@@ -41,13 +41,16 @@ class Parser:
 
         if not self._filepath:
             default_path = path.join(os.getcwd(), "config.toml")
-            config_path = pathlib.Path(
-                os.getenv(CONF_FILEPATH_KEY,default_path)
-            ).absolute()
 
-            if not os.stat(config_path):
+            config_path = pathlib.Path(os.getenv(CONF_FILEPATH_KEY, default_path))
+            if not config_path.is_absolute():
+                config_path = (pathlib.Path(os.getcwd()) / config_path).absolute()
+
+            try:
+                os.stat(config_path)
+            except FileNotFoundError:
                 raise ConfigError(
-                    f"No valid configuration file found, try setting '{CONF_FILEPATH_KEY}'"
+                    f"No config file found at '{config_path}', try setting '{CONF_FILEPATH_KEY}'"
                 )
             self._filepath = config_path
 
@@ -72,6 +75,8 @@ class Parser:
             raise ParseError(f"Unable to parse TOML file") from err
 
         for env_key, env_val in environ.items():
+            if env_key == CONF_FILEPATH_KEY:
+                continue
             if not env_key.startswith(_LIBRARY_PREFIX):
                 continue
 

@@ -28,7 +28,7 @@ $ poetry add tomlenv
 
 ### Basic Usage
 
-Assuming you have this TOML file:
+Assuming you have a `config.toml` file in your project root:
 ```toml
 token = "dev"
 debug = false
@@ -62,6 +62,12 @@ debug = config.debug
 print(token) # prints "dev"
 print(debug) # prints True
 ```
+
+## Configuration
+
+To configure the location of your toml file, set `TOMLENV_CONF_FILEPATH`.
+
+For example if your config file is in `configs/config.toml` relative to the project root, then set `TOMLENV_CONF_FILEPATH=configs/config.toml`
 
 ## Tests
 
