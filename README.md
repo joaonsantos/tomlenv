@@ -46,7 +46,7 @@ Create your configuration dataclass and parse configuration into it:
 import tomlenv
 
 class Config:
-    token: str = ""
+    token: str = ''
     enabled: bool = False
 
 config = Config()
