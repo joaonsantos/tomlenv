@@ -102,9 +102,9 @@ class Parser:
                 except ValueError as err:
                     raise ParseError(f"Invalid time, key: {env_key}") from err
             elif type(orig_val) is bool:
-                if env_val.startswith("true") or env_val == "1":
+                if env_val.lower().startswith("true") or env_val == "1":
                     config[key] = True
-                elif env_val.startswith("false") or env_val == "0":
+                elif env_val.lower().startswith("false") or env_val == "0":
                     config[key] = False
                 else:
                     raise ParseError(f"Invalid bool, key: {env_key}") from err
