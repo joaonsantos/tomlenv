@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tomlenv"
-version = "0.2.1"
+version = "0.2.2"
 description = "Environment Wrapped TOML"
 authors = ["João Santos <joaopns05@gmail.com>"]
 readme = "README.md"
