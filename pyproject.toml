@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tomlenv"
-version = "0.2.2"
+version = "0.2.3"
 description = "Environment Wrapped TOML"
 authors = ["João Santos <joaopns05@gmail.com>"]
 readme = "README.md"
@@ -17,9 +17,9 @@ classifiers = [
 python = "^3.11"
 
 [tool.poetry.group.dev.dependencies]
-isort = "^5.11.4"
-black = "^22.12.0"
-coverage = "^7.0.1"
+isort = "^5.13.1"
+black = "^24.10.0"
+coverage = "^7.6.10"
 
 [tool.isort]
 profile = "black"
