@@ -1,7 +1,7 @@
 # TOMLenv
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/joaonsantos/tomlenv/python-publish.yml)
 ![PyPI - Version](https://img.shields.io/pypi/v/tomlenv)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tomlenv)
+![Pypi - Python Version](https://img.shields.io/badge/python-3.11%2B-blue)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/tomlenv)
 ![License](https://img.shields.io/github/license/joaonsantos/tomlenv)
 
